@@ -1,7 +1,10 @@
 ## Note for the test
 
 Run test:
+
+```bash
 npm run test
+```
 
 ## What I have done
 

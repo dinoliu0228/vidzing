@@ -223,14 +223,16 @@ You will have a team to discuss those problems with and make decisions as a grou
   I haven't used Heroku or Vercel before, but I assume they should be simiar as netlify.
 
   Netlify provide lots of good features that help us easily deploy our code to different environment. it enables you to set up your software faster and ship better products more often.
-  it is also really easy to setup and use
+  it is also really easy to setup and use.
+  However, setup AWS, may require lots of specific knowledge around aws tech stacks.
+
+  Moreover, the cost for using netifly will be cheaper than user aws.
 
   For me a good CICD tool should support following features
 
   1. Easy to build and deploy our FE code with less amount of configuration
   2. Support mulitple environments deployment. i.e. during the build pipeline, we are able to deploy our code to lots of different environment, such as qa, staging, demo & prod
   3. Can run unit tests, integration test & e2e tests during the build, and will failed the build if the tests are failed
-  4. can run security checks
 
 - At Vidzing we are currently a small team of developers, but we are planning to expand fast! One of our Developers likes Linux,
   others like MacOS... We are sure you've heard this quote before "But, it works on MY COMPUTER!". Sometimes something works on one computer

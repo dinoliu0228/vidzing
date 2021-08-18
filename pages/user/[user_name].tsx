@@ -67,7 +67,7 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
     const data: UserDetail = await res.data;
     return { props: { data } };
   } catch (e) {
-    //TODO error handling
+    //TODO error handling, for example, check the status 404
     return { props: { data: null } };
   }
 }

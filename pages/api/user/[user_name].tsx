@@ -27,7 +27,8 @@ const getSingleUserByName = async (username: string, res: NextApiResponse) => {
     const response = await axios.get<UserDetailApi[]>(GET_USERS_ENDPOINT);
     if (response.data && response.data.length > 0) {
       const user = response.data.find(
-        (x) => x.username.toLocaleLowerCase() === username.toLocaleLowerCase()
+        (x: UserDetailApi) =>
+          x.username.toLocaleLowerCase() === username.toLocaleLowerCase()
       );
       if (user) {
         res.status(200).json(user);
